@@ -22,12 +22,14 @@ segment**, or an **absolute path**. Never print a bare filename on its own.
 Why: the terminal's link detector requires a directory segment to recognize a
 code/general file path. A lone filename is treated as plain text.
 
-**Do not prefix the path with the current project's own folder name.** Relative
-paths are resolved against the project root (the cwd), so adding the folder name
+**Do not prefix the path with the current project's own root folder name** (this
+applies to every project, whatever its folder is named). Relative paths are
+resolved against the project root (the cwd), so adding the root folder name
 doubles it and resolution fails.
 
-- (cwd is `...\Project5800`) ❌ `Project5800/Docs/UDS_Reverse/00_Weather_System_Roadmap.html`
-- ✅ `Docs/UDS_Reverse/00_Weather_System_Roadmap.html`  (or an absolute path)
+- If the project root folder is `<ProjectRoot>` and it contains `Docs/Foo.html`:
+  - ❌ `<ProjectRoot>/Docs/Foo.html`
+  - ✅ `Docs/Foo.html`  (or an absolute path)
 - When unsure, use an **absolute path** — it always resolves.
 
 ### Specifics
