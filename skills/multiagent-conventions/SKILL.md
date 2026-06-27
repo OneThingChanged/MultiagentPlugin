@@ -22,6 +22,14 @@ segment**, or an **absolute path**. Never print a bare filename on its own.
 Why: the terminal's link detector requires a directory segment to recognize a
 code/general file path. A lone filename is treated as plain text.
 
+**Do not prefix the path with the current project's own folder name.** Relative
+paths are resolved against the project root (the cwd), so adding the folder name
+doubles it and resolution fails.
+
+- (cwd is `...\Project5800`) ❌ `Project5800/Docs/UDS_Reverse/00_Weather_System_Roadmap.html`
+- ✅ `Docs/UDS_Reverse/00_Weather_System_Roadmap.html`  (or an absolute path)
+- When unsure, use an **absolute path** — it always resolves.
+
 ### Specifics
 
 - **Code / general files** (`.ts`, `.rs`, `.py`, `.json`, …): need **≥1 directory
