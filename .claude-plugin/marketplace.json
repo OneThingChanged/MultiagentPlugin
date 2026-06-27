@@ -1,0 +1,13 @@
+{
+  "name": "multiagent",
+  "owner": {
+    "name": "OneThingChanged"
+  },
+  "plugins": [
+    {
+      "name": "multiagent",
+      "source": "./",
+      "description": "MultiAgent terminal conventions (clickable file-path formatting, terminal UX)."
+    }
+  ]
+}

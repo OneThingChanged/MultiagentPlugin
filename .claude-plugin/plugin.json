@@ -1,0 +1,11 @@
+{
+  "name": "multiagent",
+  "description": "MultiAgent desktop app conventions for Claude/Codex terminal sessions: write file paths so the in-app terminal turns them into clickable links, plus terminal UX conventions.",
+  "version": "0.1.0",
+  "author": {
+    "name": "OneThingChanged"
+  },
+  "homepage": "https://github.com/OneThingChanged/MultiagentPlugin",
+  "repository": "https://github.com/OneThingChanged/MultiagentPlugin",
+  "license": "MIT"
+}

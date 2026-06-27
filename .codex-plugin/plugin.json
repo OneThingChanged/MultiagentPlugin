@@ -1,0 +1,28 @@
+{
+  "name": "multiagent",
+  "version": "0.1.0",
+  "description": "MultiAgent desktop app conventions for Codex terminal sessions: write file paths so the in-app terminal turns them into clickable links, plus terminal UX conventions.",
+  "author": {
+    "name": "OneThingChanged"
+  },
+  "homepage": "https://github.com/OneThingChanged/MultiagentPlugin",
+  "repository": "https://github.com/OneThingChanged/MultiagentPlugin",
+  "license": "MIT",
+  "keywords": [
+    "multiagent",
+    "terminal",
+    "conventions",
+    "paths"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "MultiAgent",
+    "shortDescription": "MultiAgent terminal conventions for Codex",
+    "longDescription": "Conventions for working inside the MultiAgent desktop app's terminal: write file paths with a directory segment or absolute path so the app turns them into clickable links, use path:line to jump to a line, and related terminal UX behavior.",
+    "developerName": "OneThingChanged",
+    "category": "Engineering",
+    "capabilities": [
+      "Read"
+    ]
+  }
+}
